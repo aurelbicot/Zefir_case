@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --zefir: #6C2EA8;
+  --zefir-dark: #5D2997;
+  --zefir-muted: rgba(108, 46, 168, 0.08);
+  --bg: #ffffff;
+  --bg-off: #fafafa;
+  --text: #1a1a1a;
+  --text-muted: #4b5563;
+  --border: #e5e7eb;
+}
+
+body {
+  @apply antialiased text-gray-900 bg-white;
+  font-feature-settings: normal;
+}
+
+/* Clean focus for accessibility */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-zefir;
+}
